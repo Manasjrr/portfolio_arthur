@@ -41,37 +41,7 @@
             background: var(--bg);
             color: var(--text);
             overflow-x: hidden;
-            cursor: none;
         }
-
-        /* ─── CURSEUR CUSTOM ─── */
-        /* .cursor {
-            width: 12px;
-            height: 12px;
-            background: var(--c1);
-            border-radius: 50%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 9999;
-            transition: transform 0.1s ease;
-            mix-blend-mode: difference;
-        }
-
-        .cursor-trail {
-            width: 36px;
-            height: 36px;
-            border: 1.5px solid var(--c3);
-            border-radius: 50%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 9998;
-            transition: all 0.15s ease;
-            mix-blend-mode: difference;
-        } */
 
         /* ─── NAVIGATION ─── */
         nav {
@@ -952,11 +922,6 @@
 </head>
 
 <body>
-
-    <!-- CURSEUR CUSTOM -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-trail" id="cursorTrail"></div>
-
     <!-- ─── NAVIGATION ─── -->
     <nav>
         <div class="nav-logo">Arthur<span>.</span>Theard</div>
@@ -1246,31 +1211,13 @@
 
     <!-- ─── FOOTER ─── -->
     <footer>
-        <div class="footer-logo">Votre<span>.</span>portfolio</div>
+        <div class="footer-logo">Arthur<span>.</span>Theard</div>
         <div>Conçu &amp; développé avec passion · Rennes 2026</div>
         <div>BTS SIO SLAM → Epitech</div>
     </footer>
 
     <!-- ─── JAVASCRIPT ─── -->
     <script>
-        /* --- Curseur personnalisé --- */
-        const cursor = document.getElementById('cursor');
-        const trail = document.getElementById('cursorTrail');
-        let mx = 0, my = 0, tx = 0, ty = 0;
-
-        document.addEventListener('mousemove', (e) => {
-            mx = e.clientX;
-            my = e.clientY;
-            cursor.style.transform = `translate(${mx - 6}px, ${my - 6}px)`;
-        });
-
-        (function animTrail() {
-            tx += (mx - tx - 18) * 0.12;
-            ty += (my - ty - 18) * 0.12;
-            trail.style.transform = `translate(${tx}px, ${ty}px)`;
-            requestAnimationFrame(animTrail);
-        })();
-
         /* --- Scroll reveal --- */
         const reveals = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver((entries) => {
