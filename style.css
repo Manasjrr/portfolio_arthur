@@ -733,7 +733,19 @@ section {
 }
 
 /* Image bannière (remplit la box) — projets 2 et 3 */
-.project-thumb-2 .project-thumb-img,
+
+.project-thumb-2 .project-thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 0.85;
+    transition: opacity 0.3s, transform 0.4s;
+
+}
+
+
 .project-thumb-3 .project-thumb-img {
     width: 100%;
     height: 100%;
