@@ -7,13 +7,15 @@
     <title>Portfolio — Développeur Full-Stack</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ─── NAVIGATION ─── -->
+    <!-- ---- NAVIGATION ---- -->
     <nav>
         <div class="nav-logo">Arthur<span>.</span>Theard</div>
         <ul class="nav-links">
@@ -24,7 +26,7 @@
         </ul>
     </nav>
 
-    <!-- ─── HERO ─── -->
+    <!-- ---- HERO ---- -->
     <section id="hero">
         <div class="hero-bg">
             <div class="blob blob-1"></div>
@@ -67,7 +69,7 @@
         </div>
     </section>
 
-    <!-- ─── À PROPOS ─── -->
+    <!-- ---- À PROPOS ---- -->
     <section id="about">
         <div class="section-label">À propos</div>
         <h2 class="section-title">Qui suis-je ?</h2>
@@ -116,7 +118,7 @@
                         <div class="timeline-title">BTS SIO — Option SLAM</div>
                         <div class="timeline-sub">
                             Lycée [De La Salle] · Rennes<br>
-                            Développement logiciel &amp; web, bases de données, réseaux
+                            Développement logiciel &amp; web, bases de données, réseau / système
                         </div>
                     </div>
                 </div>
@@ -124,7 +126,7 @@
         </div>
     </section>
 
-    <!-- ─── COMPÉTENCES ─── -->
+    <!-- ---- COMPÉTENCES ---- -->
     <section id="skills">
         <div class="section-label">Compétences</div>
         <h2 class="section-title">Mes technos</h2>
@@ -182,14 +184,17 @@
         </div>
     </section>
 
-    <!-- ─── PROJETS ─── -->
+    <!-- ---- PROJETS ---- -->
     <section id="projects">
         <div class="section-label">Projets</div>
         <h2 class="section-title">Ce que j'ai construit</h2>
         <div class="projects-grid reveal">
 
             <div class="project-card">
-                <div class="project-thumb project-thumb-1">MB</div>
+                <div class="project-thumb project-thumb-1">
+                    <img src="https://placehold.co/600x180/FF6B6B/ffffff?text=MetaBet" alt="Aperçu MetaBet"
+                        class="project-thumb-img">
+                </div>
                 <div class="project-body">
                     <div class="project-tags">
                         <span class="project-tag pt-1">Node.js</span>
@@ -201,29 +206,63 @@
                         Site de jeu d'arcade en ligne ressemblant à un casino
                     </div>
                     <div class="project-links">
-                        <a href="#" class="plink plink-gh">GitHub</a>
-                        <a href="#" class="plink plink-live">Démo live</a>
+                        <a href="https://github.com/ton-user/metabet" class="plink plink-gh" target="_blank"
+                            rel="noopener noreferrer">
+                            <!-- Icône GitHub SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577
+                            0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756
+                            -1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304
+                            3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931
+                            0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322
+                            3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404
+                            2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84
+                            1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823
+                            2.222 0 1.606-.015 2.898-.015 3.293 0 .319.216.694.825.576C20.565 21.795
+                            24 17.298 24 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://metabet.ton-domaine.com" class="plink plink-live" target="_blank"
+                            rel="noopener noreferrer">
+                            <!-- Icône flèche externe SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                            Démo live
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-thumb project-thumb-2">P2</div>
+                <div class="project-thumb project-thumb-2">
+                    <img src="https://placehold.co/600x180/4ECDC4/ffffff?text=Icodia" alt="Aperçu Icodia"
+                        class="project-thumb-img">
+                </div>
                 <div class="project-body">
                     <div class="project-tags">
-                        <span class="project-tag pt-2">Vuejs</span>
+                        <span class="project-tag pt-2">Vue.js</span>
                         <span class="project-tag pt-5">Symfony</span>
                         <span class="project-tag pt-1">Api-platform</span>
                     </div>
                     <div class="project-title">Icodia</div>
                     <div class="project-desc">
-                        Applications web réalisée en complète autonomie, en full stack
+                        Application web réalisée en complète autonomie, en full stack
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-thumb project-thumb-3">P3</div>
+                <div class="project-thumb project-thumb-3">
+                    <img src="https://placehold.co/600x180/C77DFF/ffffff?text=Boutique-Capa" alt="Aperçu Boutique-Capa"
+                        class="project-thumb-img">
+                </div>
                 <div class="project-body">
                     <div class="project-tags">
                         <span class="project-tag pt-3">Wordpress</span>
@@ -240,7 +279,8 @@
         </div>
     </section>
 
-    <!-- ─── CONTACT ─── -->
+
+    <!-- ---- CONTACT ---- -->
     <section id="contact">
         <div class="section-label">Contact</div>
         <h2 class="section-title">Travaillons ensemble</h2>
@@ -266,14 +306,14 @@
                         <div class="contact-item-icon ci-2">💼</div>
                         <div>
                             <div class="contact-item-label">LinkedIn</div>
-                            <div class="contact-item-val">https://www.linkedin.com/in/arthur-theard-a83333206/</div>
+                            <div class="contact-item-val">linkedin.com/arthur-theard</div>
                         </div>
                     </a>
                     <a href="https://github.com/Manasjrr" class="contact-item" target="_blank">
                         <div class="contact-item-icon ci-3">🐙</div>
                         <div>
                             <div class="contact-item-label">GitHub</div>
-                            <div class="contact-item-val">https://github.com/Manasjrr</div>
+                            <div class="contact-item-val">github.com/Manasjrr</div>
                         </div>
                     </a>
                 </div>
@@ -290,7 +330,8 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label">Message</label>
-                    <textarea class="form-textarea" placeholder="Bonjour, je cherche un développeur en alternance..."></textarea>
+                    <textarea class="form-textarea"
+                        placeholder="Bonjour, je cherche un développeur en alternance..."></textarea>
                 </div>
                 <button class="form-submit" id="submitBtn">Envoyer le message →</button>
             </div>
@@ -298,7 +339,7 @@
         </div>
     </section>
 
-    <!-- ─── FOOTER ─── -->
+    <!-- ---- FOOTER ---- -->
     <footer>
         <div class="footer-logo">Arthur<span>.</span>Theard</div>
         <div>Conçu &amp; développé avec passion · Rennes 2026</div>
